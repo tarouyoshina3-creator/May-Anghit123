@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>May Anghit Record In Baguio Central Universitys</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <p class="eyebrow">May — Anghit Employees</p>
+    <h1>May Anghit Record In Baguio Central University</h1>
+    <p class="count" id="resultCount" aria-live="polite"></p>
+  </header>
+
+  <section class="controls">
+    <div class="filter-group">
+      <label for="ageFilter">Age Bracket</label>
+      <select id="ageFilter">
+        <option value="all">All Ages</option>
+        <option value="18-20">18 - 20</option>
+        <option value="21-25">21 - 25</option>
+        <option value="26-30">26 - 30</option>
+        <option value="31-35">31 - 35</option>
+        <option value="36-40">36 - 40</option>
+        <option value="41-45">41 - 45</option>
+        <option value="46-50">46 - 50</option>
+        <option value="51-55">51 - 55</option>
+        <option value="56-60">56 - 60</option>
+        <option value="61+">61+</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="professionFilter">Profession</label>
+      <select id="professionFilter">
+        <option value="all">All Professions</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="genderFilter">Gender</label>
+      <select id="genderFilter">
+        <option value="all">All Genders</option>
+      </select>
+    </div>
+    <button type="button" id="resetBtn" class="reset">Reset</button>
+  </section>
+
+  <main id="resultsGrid" class="grid">
+    <div class="empty-state">Loading records…</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
